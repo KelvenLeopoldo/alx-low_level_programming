@@ -1,22 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-*_strlen_recursion - function that print the length of the word
-*@s: input
-*Return: legth of the string
-*/
+ * _strlen_recursion - Function that print a len of a string
+ * @s: input
+ * Return: Always 0.
+ */
 int _strlen_recursion(char *s)
 {
-	int len = 0;
+	if (*s != '\0')
+	{
+		return (1 + _strlen_recursion(s + 1));
+	}
 
-	if (*s == '\0')
-	{
-		return (len + 1);
-	}
-	else
-	{
-		len++;
-		_strlen_recursion(s + 1);
-	}
+	return (0);
 }
