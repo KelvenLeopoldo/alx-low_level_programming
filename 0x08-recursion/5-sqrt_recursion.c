@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * _sqrt_aux - return the natural root
+/**
+ *_sqrt_aux - return the natural root of a number
  *
  *@c: input
  *@d: input
@@ -19,7 +19,7 @@ int _sqrt_aux(int c, int d)
 	return (_sqrt_aux(c, d + 1));
 }
 /**
- * _sqtr_recursion - return the natural square
+ * _sqrt_recursion - returns the natural square of a number
  * @n: input
  * Return: natural sqtr
  */
